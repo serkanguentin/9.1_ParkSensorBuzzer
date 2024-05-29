@@ -4,7 +4,7 @@ int echoPin = 13;// 6;
 int buzzerPin= 3;// 8      
 int time;                  
 int distance ;
-int uyariLed ;                                           
+int warningLed ;                                           
             
 
 void setup() {
@@ -26,40 +26,40 @@ void loop() {
  
  if(distance>0 && distance<=15) 
 {
-digitalWrite(uyariLed , HIGH);
+digitalWrite(warningLed , HIGH);
 digitalWrite(buzzerPin, HIGH);
 delay(150); 
 
-digitalWrite(uyariLed , LOW);
+digitalWrite(warningLed , LOW);
 digitalWrite(buzzerPin , LOW);
 delay(100);
 }
 
  else if(distance>15 && distance<=30) 
 {
-digitalWrite(uyariLed , HIGH);
+digitalWrite(warningLed , HIGH);
 digitalWrite(buzzerPin, HIGH);
 delay(150);
-digitalWrite(uyariLed , LOW);
+digitalWrite(warningLed , LOW);
 digitalWrite(buzzerPin , LOW);
 delay(200);
 }
 else if(distance>30 && distance<=45) 
 {
-digitalWrite(uyariLed , HIGH);
+digitalWrite(warningLed , HIGH);
 digitalWrite(buzzerPin , HIGH);
 delay(150);
-digitalWrite(uyariLed , LOW);
+digitalWrite(warningLed , LOW);
 digitalWrite(buzzerPin , LOW);
 delay(400);
 }
 
 else if(distance>45 && distance<=60) 
 {
-digitalWrite(uyariLed , HIGH);
+digitalWrite(warningLed , HIGH);
 digitalWrite(buzzerPin , HIGH);
 delay(150);
-digitalWrite(uyariLed , LOW);
+digitalWrite(warningLed , LOW);
 digitalWrite(buzzerPin , LOW);
 delay(800);
 }
